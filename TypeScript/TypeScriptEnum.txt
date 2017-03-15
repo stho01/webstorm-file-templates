@@ -1,0 +1,9 @@
+/**
+ * Created by ${USER} on ${DATE}.
+ */
+ 
+namespace ${Namespace} {
+    export enum ${NAME} {
+        
+    }
+}

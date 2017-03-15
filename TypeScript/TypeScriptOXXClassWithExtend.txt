@@ -1,0 +1,56 @@
+/**
+ * Created by ${USER} on ${DATE}.
+ */
+
+namespace ${Namespace} {
+"use strict";
+
+    //***************************************************
+    //** Class options descriptor
+    //***************************************************
+    
+    export interface ${NAME}Options extends ${Extends}Options {
+    
+    }
+    
+    //***************************************************
+    //** Default options object. 
+    //***************************************************
+    
+    let _defaultOptions: ${NAME}Options = {
+        
+    };
+    
+    //***************************************************
+    //** Class description...
+    //***************************************************
+    
+    export class ${NAME} extends ${Extends} {
+
+        //***************************************************
+        //** CLASS VARIABLES AND ATTRIBUTES
+        //***************************************************
+
+        protected _options: ${NAME}Options;
+
+        //***************************************************
+        //** CONSTRUCTOR
+        //***************************************************
+
+        constructor(options?: ${NAME}Options) {
+            super(options);
+            this._options =
+                Oxx.Utils.ObjectUtils.deepExtend(this._options,
+                    Oxx.Utils.ObjectUtils.createOptionsObject(_defaultOptions, options));
+        }
+        
+        //***************************************************
+        //** PUBLIC MEMBERS FUNCTIONS
+        //***************************************************
+
+        //***************************************************
+        //** PRIVATE MEMBER FUNCTIONS
+        //***************************************************
+        
+    }
+}

@@ -1,0 +1,14 @@
+/**
+ * Created by ${USER} on ${DATE}.
+ */
+
+namespace ${Namespace} {
+    "use strict";
+
+    /**
+    * Summary
+    */
+    export interface ${NAME} {
+        
+    }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>${NAME}</title>
+    <script>
+        function _initApplication() {
+
+        }
+    </script>
+</head>
+<body>
+
+<div id="template">
+    
+</div>
+
+<script>
+    _initApplication();
+</script>
+
+</body>
+</html>
