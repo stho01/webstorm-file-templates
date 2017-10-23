@@ -1,0 +1,28 @@
+#set( $regex = "([a-z])([A-Z]+)")
+#set( $dashReplacement = "$1-$2")
+#set( $spaceReplacement = "$1 $2")
+#set( $classNameToDash = $NAME.replaceAll($regex, $dashReplacement).toLowerCase())
+#set( $classNameToSpace = $NAME.replaceAll($regex, $spaceReplacement))
+#set( $className = ${NAME})
+
+<template>
+  <div class="$classNameToDash">
+    <p>{{message}}</p>
+  </div>
+</template>
+<script>
+const $className = {
+    name: '$className',
+    data() {
+        return {
+            message: '$classNameToSpace'
+        }
+    }
+}
+export default $className;
+</script>
+<style scoped lang="scss">
+.$classNameToDash {
+
+}
+</style>
